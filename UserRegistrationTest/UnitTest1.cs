@@ -19,6 +19,14 @@ namespace UserRegistrationTest
             Assert.AreEqual(true, result);
 
         }
+        [TestMethod]
+        public void LastNameTest()
+        {
+            string name = "Sriman";
+            bool result = program.LastNameVal(name);
+            Assert.AreEqual(true, result);
+        }
     }
 }
+   
         
