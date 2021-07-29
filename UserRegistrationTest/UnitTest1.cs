@@ -44,7 +44,7 @@ namespace UserRegistrationTest
         [TestMethod]
         public void PasswordTest()
         {
-            string password = "Sathya@123";
+            string password = "Sathya@456";
             bool result = program.PasswordRule(password);
             Assert.AreEqual(true, result);
         }
