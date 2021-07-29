@@ -29,9 +29,21 @@ namespace UserRegistrationTest
         [TestMethod]
         public void EmailTest()
         {
-            string email = "Satya.bhandari@gmail.com.in";
-            bool result = program.EmailValidation(email);
+            string email1 = "sathya@yahoo.com";
+            string email2 = "sriman-143@yahoo.com";
+            string email3 = "abc.200@yahoo.com";
+            string email4 = "abc567@abc.com";
+            string email5 = "abc-200@abc.com.ac";
+            bool result = program.EmailValidation(email1);
+            bool result2 = program.EmailValidation(email2);
+            bool result3 = program.EmailValidation(email3);
+            bool result4 = program.EmailValidation(email4);
+            bool result5 = program.EmailValidation(email5);
             Assert.AreEqual(true, result);
+            Assert.AreEqual(true, result2);
+            Assert.AreEqual(true, result3);
+            Assert.AreEqual(true, result4);
+            Assert.AreEqual(true, result5);
         }
         [TestMethod]
         public void MobileTest()
