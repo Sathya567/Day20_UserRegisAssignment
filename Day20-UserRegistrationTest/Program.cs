@@ -9,7 +9,7 @@ namespace Day20_UserRegistrationTest
         public static Program program = new Program();
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To UserRegistration");
+            Console.WriteLine("Welcome To UserRegistration RegEx");
             Console.Write("Enter First Name: ");
             string FirstName = Console.ReadLine();
             Console.WriteLine(program.FirstNameVal(FirstName));
