@@ -41,6 +41,13 @@ namespace UserRegistrationTest
             Assert.AreEqual(true, result);
 
         }
+        [TestMethod]
+        public void PasswordTest()
+        {
+            string password = "Sathya@123";
+            bool result = program.PasswordRule(password);
+            Assert.AreEqual(true, result);
+        }
     }
 }
 
