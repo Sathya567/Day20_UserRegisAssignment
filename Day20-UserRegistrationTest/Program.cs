@@ -21,7 +21,7 @@ namespace Day20_UserRegistrationTest
             Console.WriteLine(program.EmailValidation(Email));
             Console.Write("Enter Mobile_NO: ");
             string mobile = Console.ReadLine();
-            Console.WriteLine(p.MobileValidation(mobile));
+            Console.WriteLine(program.MobileValidation(mobile));
         }
     
         public bool FirstNameVal(string fname)
