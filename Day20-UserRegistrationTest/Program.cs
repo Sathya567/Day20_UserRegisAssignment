@@ -13,11 +13,21 @@ namespace Day20_UserRegistrationTest
             Console.Write("Enter First Name: ");
             string FirstName = Console.ReadLine();
             Console.WriteLine(program.FirstNameVal(FirstName));
+            Console.Write("Enter Last Name: ");
+            string LastName = Console.ReadLine();
+            Console.WriteLine(program.LastNameVal(LastName));
         }
         public bool FirstNameVal(string fname)
         {
             Regex rg = new Regex(REGEX_PATTERN);
             return rg.IsMatch(fname); ;
         }
+        public bool LastNameVal(string last_name)
+        {
+            Regex rg = new Regex(REGEX_PATTERN);
+            bool validate = rg.IsMatch(last_name);
+            return validate;
+        }
     }
 }
+   
