@@ -19,7 +19,11 @@ namespace Day20_UserRegistrationTest
             Console.Write("Enter E-mail : ");
             string Email = Console.ReadLine();
             Console.WriteLine(program.EmailValidation(Email));
+            Console.Write("Enter Mobile_NO: ");
+            string mobile = Console.ReadLine();
+            Console.WriteLine(p.MobileValidation(mobile));
         }
+    
         public bool FirstNameVal(string fname)
         {
             Regex rg = new Regex(REGEX_PATTERN);
@@ -38,7 +42,15 @@ namespace Day20_UserRegistrationTest
             bool validate = rg.IsMatch(email);
             return validate;
         }
+        public bool MobileValidation(string mobile)
+        {
+            string MobilePattern = "^(91){1}[ ]+[0-9]{10}$";
+            Regex rg = new Regex(MobilePattern);
+            bool validate = rg.IsMatch(mobile);
+            return validate;
+        }
     }
 }
+   
    
    
